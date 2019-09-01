@@ -42,3 +42,12 @@ out_lines "Setting up RVM and Ruby"
 curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -
 
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
+
+out_lines "Setting up Powerline Fonts"
+
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
